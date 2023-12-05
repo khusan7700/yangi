@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-/*      font-family: 'Montserrat', sans-serif;     */
 :root {
   --font: "Montserrat", sans-serif;
   --width: 1440px;
@@ -113,14 +112,47 @@
   color: var(--textcolor);
 }
 
-.s01_texts p:nth-child(2) {
+.s01-text02 {
   font-size: 64px;
   font-weight: 700;
 }
 
-.s01_texts p:nth-child(4) {
+.s01-text04 {
   font-size: 32px;
   font-weight: 700;
+}
+.animation {
+  height: 70px;
+  overflow: hidden;
+}
+.animation p {
+  color: red;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animation p:nth-child(1) {
+  animation: ani_text 10s infinite;
+}
+
+@keyframes ani_text {
+  0% {
+    margin-top: 990;
+  }
+  25% {
+    margin-top: -70;
+  }
+  50% {
+    margin-top: -140;
+  }
+  75% {
+    margin-top: -70;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 .s01_boxes {
@@ -188,4 +220,76 @@
 
 .s01_box del {
   color: gray;
+}
+/*                         section    02                     */
+/*                         section    02                     */
+/*                         section    02                     */
+/*                         section    02                     */
+.section02 {
+  width: 1232px;
+  height: 918px;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.s02_text {
+  width: 1232px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.s02_text h1 {
+  font-family: var(--font);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--textcolor);
+}
+
+.s02_text button {
+  width: 250px;
+  height: 60px;
+  top: 1083px;
+  left: 1048px;
+  padding: 14px, 24px, 14px, 24px;
+  border-radius: 8px;
+  gap: 10px;
+  background-color: #f72585;
+  color: #fff;
+  border: none;
+}
+
+.s02_text button:active {
+  background-color: blue;
+}
+
+.s02_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+}
+
+.s02_box {
+  width: 296px;
+  height: 391px;
+  top: 1201px;
+  left: 104px;
+  border: 1px solid red;
+}
+
+.s2_box01 img {
+  position: absolute;
+}
+.s02_box h2{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ top: 300px;
+ color: #1c3554;
 }
