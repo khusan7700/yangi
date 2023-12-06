@@ -230,7 +230,6 @@
   height: 918px;
   position: relative;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .s02_text {
@@ -279,12 +278,9 @@
   height: 391px;
   top: 1201px;
   left: 104px;
-  border: 1px solid red;
 }
 
-.s2_box01 img {
-  position: absolute;
-}
+
 .s02_box h2{
  display: flex;
  justify-content: center;
@@ -292,4 +288,16 @@
  position: relative;
  top: 300px;
  color: #1c3554;
+ background: rgba(241, 241, 152, 0.479);
+ border-radius: 20px;
+}
+
+.s02_box h2:hover{
+  transform: scale(1.1);
+}
+
+.s02_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
